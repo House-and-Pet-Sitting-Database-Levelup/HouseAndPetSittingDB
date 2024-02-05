@@ -1,5 +1,5 @@
 CREATE TABLE sitters(
-sitterID int, 
+sitterID uniqueidentifier DEFAULT NEWSEQUENTIALID(), 
 sitterName varchar(255), 
 sitterSurname varchar(255), 
 sitterEmail varchar(255), 
@@ -7,7 +7,7 @@ sitterCellNumber varchar(255)
 );
 
 CREATE TABLE clients(
-clientID int, 
+clientID uniqueidentifier DEFAULT NEWSEQUENTIALID(), 
 clientName varchar(255), 
 clientSurname varchar(255), 
 clientAddressID varchar(255), 
@@ -17,7 +17,7 @@ petNumber int
 );
 
 CREATE TABLE clientPets(
-petID int, 
+petID uniqueidentifier DEFAULT NEWSEQUENTIALID(), 
 clientID int, 
 petName varchar(255), 
 petSpecies varchar(255), 
@@ -26,7 +26,7 @@ specialNotes varchar(255)
 );
 
 CREATE TABLE sittingJob(
-jobID int, 
+jobID uniqueidentifier DEFAULT NEWSEQUENTIALID(), 
 sitterID int, 
 clientID int, 
 startDate DATE, 
@@ -37,7 +37,7 @@ jobRate int
 );
 
 CREATE TABLE clientAddresses(
-addressID int, 
+addressID uniqueidentifier DEFAULT NEWSEQUENTIALID(), 
 clientID int,
 addressLine1 varchar(255), 
 addressLine2 varchar(255), 
@@ -47,7 +47,7 @@ postalCode varchar(255)
 );
 
 CREATE TABLE petSpecies(
-speciesID integer, 
+speciesID uniqueidentifier DEFAULT NEWSEQUENTIALID(), 
 speciesName varchar(255), 
 exotic int --0 for no, 1 for yes
 );
