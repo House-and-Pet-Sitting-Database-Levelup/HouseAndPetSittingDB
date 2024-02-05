@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 19.00
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "HouseAndPetSittingDB", "HouseAndPetSittingDB\HouseAndPetSittingDB.ssmssqlproj", "{C7D9D6D4-8BDF-4EF3-84B8-49998BB3B209}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7D9D6D4-8BDF-4EF3-84B8-49998BB3B209}.Default|Default.ActiveCfg = Default
+		{35EF23CA-EC59-4125-BA30-6FB99555529E}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {43B6658F-AA05-49E1-B6DE-1FD0749EE1F8}
+	EndGlobalSection
+EndGlobal
