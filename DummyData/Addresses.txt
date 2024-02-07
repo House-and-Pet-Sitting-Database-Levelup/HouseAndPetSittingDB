@@ -1,0 +1,45 @@
+AddressLine1, AddressLine2, City, Suburb, PostalCode
+36 Magnolia Street, Melville, Johannesburg, Randburg, 2092
+19 Daisy Lane, Dainfern, Johannesburg, Fourways, 2055
+83 Sunflower Road, Parkmore, Johannesburg, Sandton, 2196
+44 Riverbend Drive, Waterfall Country Estate, Midrand, Sunninghill, 2157
+25 Acacia Close, Blue Hills, Midrand, Midrand, 1685
+91 Cedar Street, Lynnwood Glen, Pretoria, Pretoria East, 0081
+58 Marigold Avenue, Douglasdale, Johannesburg, Fourways, 2191
+71 Willow Road, Ferndale, Johannesburg, Randburg, 2194
+28 Oakwood Lane, Silver Stream Estate, Pretoria, Silver Lakes, 0081
+39 Waterfall Crescent, Waterfall Hills Estate, Midrand, Sunninghill, 2157
+12 Rose Street, Linden, Johannesburg, Randburg, 2195
+67 Jasmine Avenue, Sunninghill, Johannesburg, Sandton, 2157
+32 Marigold Place, Sunward Park, Johannesburg, Boksburg, 1470
+79 Parkview Lane, Brooklyn, Pretoria, Pretoria East, 0083
+53 Cedar Close, Irene Farm Villages, Centurion, Centurion, 0157
+21 Olive Road, Rivonia, Johannesburg, Sandton, 2191
+46 Willowbrook Road, Randpark Ridge, Johannesburg, Randburg, 2194
+18 Maple Avenue, Doringkloof, Centurion, Centurion, 0157
+62 Oak Lane, Melrose Arch, Johannesburg, Sandton, 2196
+33 Magnolia Street, Parkhurst, Johannesburg, Randburg, 2193
+72 Daisy Lane, Meyersdal, Johannesburg, Alberton, 1449
+29 Sunflower Road, Montana Park, Pretoria, Montana Park, 0182
+57 Riverbend Drive, Waterfall Estate, Midrand, Sunninghill, 2157
+14 Jasmine Avenue, Bassonia, Johannesburg, Alberton, 2190
+38 Riverbend Drive, Blue Valley Golf Estate, Centurion, Midrand, 1685
+62 Cedar Close, Eldoraigne, Centurion, Centurion, 0157
+95 Oakwood Lane, Irene, Centurion, Centurion, 0157
+17 Sunflower Road, Kensington, Johannesburg, Bedfordview, 2007
+43 Magnolia Street, Kempton Park, Johannesburg, Kempton Park, 1619
+29 Daisy Lane, Noordwyk, Midrand, Midrand, 1685
+81 Parkview Lane, Parkwood, Johannesburg, Randburg, 2193
+52 Willow Road, Pretoria North, Pretoria, Pretoria North, 0182
+26 Rose Street, Riviera, Pretoria, Pretoria, 0084
+49 Cedar Close, Roodekrans, Johannesburg, Roodepoort, 1724
+37 Olive Road, Ruimsig, Johannesburg, Roodepoort, 1732
+23 Willowbrook Road, Sandhurst, Johannesburg, Sandton, 2196
+56 Maple Avenue, Sunward Park, Johannesburg, Boksburg, 1470
+38 Oak Lane, Waterfall Estate, Midrand, Sunninghill, 2157
+71 Magnolia Street, Wilgeheuwel, Johannesburg, Roodepoort, 1724
+85 Daisy Lane, Woodmead, Johannesburg, Sandton, 2191
+43 Sunflower Road, Benoni, Johannesburg, Benoni, 1501
+19 Riverbend Drive, Dainfern Valley Estate, Midrand, Fourways, 2055
+62 Cedar Close, Equestria, Pretoria, Pretoria East, 0184
+28 Oakwood Lane, Glen Austin, Midrand, Midrand, 1685

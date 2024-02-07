@@ -1,0 +1,191 @@
+PetName, PetSpecies, PetAge, SpecialNotes.
+Smokey, Cat, 6, Loves napping
+Kiwi, Budgie, 3, Enjoys mimicking sounds
+Lily, Cat, 5, Affectionate lap cat
+Buddy, Dog, 7, Always hungry
+Milo, Cat, 5, Prefers quiet environments
+Loki, Dog, 2, Highly intelligent
+Ruby, Rabbit, 2, Loves to hop around
+Spike, Fennec fox, 4, Enjoys digging in sand
+Max, Dog, 5, Afraid of thunderstorms
+Sammy, Lizard, 2, Enjoys basking in the sun
+Duke, Dog, 4, Protective of home
+Charlie, Hedgehog, 1, Likes to explore at night
+Oliver, Cat, 3, Likes cuddling
+Luna, Cat, 2, Loves chasing toys
+Peaches, Guinea pig, 1, Loves fresh veggies
+Whiskers, Mouse, 1, Enjoys exploring maze
+Nala, Cat, 7, Demands attention
+Coco, Cat, 2, Likes to hide in boxes
+Molly, Dog, 9, Sweet and gentle
+Bubbles, Fish, 1, Loves swimming in circles
+Bailey, Dog, 8, Enjoys belly rubs
+Simba, Cat, 3, King of the house
+Squeaky, Rat, 2, Loves to snuggle
+Toby, Dog, 4, Eager to please
+Lola, Dog, 5, Enjoys car rides
+Squeaky, Rat, 2, Loves to snuggle
+Peanut, Hamster, 1, Loves running on wheel
+Rocky, Dog, 7, Loyal companion
+Bella, Dog, 3, Loves belly rubs
+Mittens, Cat, 1, Likes to knead
+Charlie, Dog, 11, Gentle and affectionate
+Lucy, Dog, 1, Loves chasing squirrels
+Peanut, Hamster, 1, Loves running on wheel
+Chloe, Cat, 1, Mischievous troublemaker
+Rocky, Dog, 8, Protective of the family
+Max, Dog, 11, Loves car rides
+Smokey, Cat, 4, Loves napping
+Bailey, Dog, 6, Good with children
+Gizmo, Dog, 5, Loves to play fetch
+Rocky, Dog, 6, Playful and energetic
+Luna, Cat, 4, Loves to chase toys
+Max, Dog, 7, Loves long hikes
+Coco, Cat, 2, Likes to hide in boxes
+Spike, Fennec fox, 4, Enjoys digging in sand
+Kiwi, Budgie, 3, Enjoys mimicking sounds
+Sammy, Lizard, 2, Enjoys basking in the sun
+Peanut, Hamster, 1, Loves running on wheel
+Molly, Dog, 9, Sweet and gentle
+Lola, Dog, 5, Enjoys car rides
+Simba, Cat, 3, King of the house
+Squeaky, Rat, 2, Loves to snuggle
+Buddy, Dog, 7, Always hungry
+Whiskers, Mouse, 1, Enjoys exploring maze
+Bella, Dog, 3, Loves belly rubs
+Ruby, Rabbit, 2, Loves to hop around
+Lucy, Dog, 1, Loves chasing squirrels
+Charlie, Dog, 11, Gentle and affectionate
+Bailey, Dog, 6, Good with children
+Mittens, Cat, 1, Likes to knead
+Rocky, Dog, 6, Playful and energetic
+Gizmo, Dog, 5, Loves to play fetch
+Max, Dog, 11, Loves car rides
+Smokey, Cat, 4, Loves napping
+Chloe, Cat, 1, Mischievous troublemaker
+Peanut, Hamster, 1, Loves running on wheel
+Lola, Dog, 5, Enjoys car rides
+Spike, Fennec fox, 4, Enjoys digging in sand
+Kiwi, Budgie, 3, Enjoys mimicking sounds
+Sammy, Lizard, 2, Enjoys basking in the sun
+Lucy, Dog, 1, Loves chasing squirrels
+Buddy, Dog, 7, Always hungry
+Whiskers, Mouse, 1, Enjoys exploring maze
+Molly, Dog, 9, Sweet and gentle
+Bella, Dog, 3, Loves belly rubs
+Ruby, Rabbit, 2, Loves to hop around
+Max, Dog, 7, Loves long hikes
+Mittens, Cat, 1, Likes to knead
+Lucy, Dog, 1, Loves chasing squirrels
+Peanut, Hamster, 1, Loves running on wheel
+Rocky, Dog, 6, Playful and energetic
+Smokey, Cat, 4, Loves napping
+Gizmo, Dog, 5, Loves to play fetch
+Lola, Dog, 5, Enjoys car rides
+Squeaky, Rat, 2, Loves to snuggle
+Buddy, Dog, 7, Always hungry
+Simba, Cat, 3, King of the house
+Sammy, Lizard, 2, Enjoys basking in the sun
+Kiwi, Budgie, 3, Enjoys mimicking sounds
+Charlie, Dog, 11, Gentle and affectionate
+Spike, Fennec fox, 4, Enjoys digging in sand
+Chloe, Cat, 1, Mischievous troublemaker
+Bailey, Dog, 6, Good with children
+Max, Dog, 5, Afraid of thunderstorms
+Lucy, Dog, 1, Loves chasing squirrels
+Mittens, Cat, 1, Likes to knead
+Buddy, Dog, 7, Always hungry
+Ruby, Rabbit, 2, Loves to hop around
+Rocky, Dog, 8, Protective of the family
+Sammy, Lizard, 2, Enjoys basking in the sun
+Lola, Dog, 5, Enjoys car rides
+Squeaky, Rat, 2, Loves to snuggle
+Lucy, Dog, 1, Loves chasing squirrels
+Simba, Cat, 3, King of the house
+Max, Dog, 11, Loves car rides
+Mittens, Cat, 1, Likes to knead
+Smokey, Cat, 4, Loves napping
+Kiwi, Budgie, 3, Enjoys mimicking sounds
+Gizmo, Dog, 5, Loves to play fetch
+Bella, Dog, 3, Loves belly rubs
+Peanut, Hamster, 1, Loves running on wheel
+Chloe, Cat, 1, Mischievous troublemaker
+Spike, Fennec fox, 4, Enjoys digging in sand
+Bailey, Dog, 6, Good with children
+Luna, Cat, 4, Loves to chase toys
+Buddy, Dog, 7, Always hungry
+Coco, Cat, 2, Likes to hide in boxes
+Rocky, Dog, 6, Playful and energetic
+Nala, Cat, 7, Demands attention
+Max, Dog, 7, Loves long hikes
+Lola, Dog, 5, Enjoys car rides
+Milo, Cat, 5, Prefers quiet environments
+Loki, Dog, 2, Highly intelligent
+Ruby, Rabbit, 2, Loves to hop around
+Spike, Fennec fox, 4, Enjoys digging in sand
+Sammy, Lizard, 2, Enjoys basking in the sun
+Peaches, Guinea pig, 1, Loves fresh veggies
+Whiskers, Mouse, 1, Enjoys exploring maze
+Nala, Cat, 7, Demands attention
+Coco, Cat, 2, Likes to hide in boxes
+Molly, Dog, 9, Sweet and gentle
+Bailey, Dog, 8, Enjoys belly rubs
+Simba, Cat, 3, King of the house
+Squeaky, Rat, 2, Loves to snuggle
+Toby, Dog, 4, Eager to please
+Lola, Dog, 5, Enjoys car rides
+Squeaky, Rat, 2, Loves to snuggle
+Peanut, Hamster, 1, Loves running on wheel
+Rocky, Dog, 7, Loyal companion
+Bella, Dog, 3, Loves belly rubs
+Mittens, Cat, 1, Likes to knead
+Charlie, Dog, 11, Gentle and affectionate
+Lucy, Dog, 1, Loves chasing squirrels
+Peanut, Hamster, 1, Loves running on wheel
+Chloe, Cat, 1, Mischievous troublemaker
+Rocky, Dog, 8, Protective of the family
+Max, Dog, 11, Loves car rides
+Smokey, Cat, 4, Loves napping
+Bailey, Dog, 6, Good with children
+Gizmo, Dog, 5, Loves to play fetch
+Rocky, Dog, 6, Playful and energetic
+Luna, Cat, 4, Loves to chase toys
+Max, Dog, 7, Loves long hikes
+Coco, Cat, 2, Likes to hide in boxes
+Spike, Fennec fox, 4, Enjoys digging in sand
+Kiwi, Budgie, 3, Enjoys mimicking sounds
+Sammy, Lizard, 2, Enjoys basking in the sun
+Peanut, Hamster, 1, Loves running on wheel
+Molly, Dog, 9, Sweet and gentle
+Lola, Dog, 5, Enjoys car rides
+Simba, Cat, 3, King of the house
+Squeaky, Rat, 2, Loves to snuggle
+Buddy, Dog, 7, Always hungry
+Whiskers, Mouse, 1, Enjoys exploring maze
+Bella, Dog, 3, Loves belly rubs
+Ruby, Rabbit, 2, Loves to hop around
+Lucy, Dog, 1, Loves chasing squirrels
+Charlie, Dog, 11, Gentle and affectionate
+Bailey, Dog, 6, Good with children
+Mittens, Cat, 1, Likes to knead
+Rocky, Dog, 6, Playful and energetic
+Gizmo, Dog, 5, Loves to play fetch
+Max, Dog, 11, Loves car rides
+Smokey, Cat, 4, Loves napping
+Chloe, Cat, 1, Mischievous troublemaker
+Peanut, Hamster, 1, Loves running on wheel
+Lola, Dog, 5, Enjoys car rides
+Spike, Fennec fox, 4, Enjoys digging in sand
+Kiwi, Budgie, 3, Enjoys mimicking sounds
+Sammy, Lizard, 2, Enjoys basking in the sun
+Lucy, Dog, 1, Loves chasing squirrels
+Buddy, Dog, 7, Always hungry
+Whiskers, Mouse, 1, Enjoys exploring maze
+Molly, Dog, 9, Sweet and gentle
+Bella, Dog, 3, Loves belly rubs
+Ruby, Rabbit, 2, Loves to hop around
+Max, Dog, 7, Loves long hikes
+Mittens, Cat, 1, Likes to knead
+Lucy, Dog, 1, Loves chasing squirrels
+Peanut, Hamster, 1, Loves running on wheel
+Rocky, Dog, 6, Playful and energetic

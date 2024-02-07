@@ -1,0 +1,59 @@
+Name, Surname, EmailAddress, PhoneNumber, PetNumber
+Lerato, Mabaso, lerato.mabaso@gmail.com, 011 555 1234, 3
+Thabo, Nkosi, thabo.nkosi@yahoo.co.za, 012 345 6789, 5
+Nomfundo, Ngubane, nomfundo.ngubane@outlook.com, 021 987 6543, 2
+Sipho, Vilakazi, sipho.vilakazi@gmail.com, 031 234 5678, 7
+Naledi, Molefe, naledi.molefe@yahoo.co.za, 041 876 5432, 4
+John, van der Merwe, john.vandermerwe@gmail.com, 051 234 5678, 1
+Thandeka, Ndlovu, thandeka.ndlovu@outlook.com, 061 345 6789, 8
+Mpho, Khumalo, mpho.khumalo@yahoo.co.za, 071 234 5678, 0
+Nomcebo, Mthembu, nomcebo.mthembu@gmail.com, 081 876 5432, 6
+Ntokozo, Dlamini, ntokozo.dlamini@yahoo.co.za, 091 987 6543, 3
+Luke, Jansen, luke.jansen@outlook.com, 021 876 5432, 9
+Zanele, Sibiya, zanele.sibiya@gmail.com, 011 876 5432, 2
+Sanele, Ngcobo, sanele.ngcobo@yahoo.co.za, 012 987 6543, 5
+Nkosinathi, Khumalo, nkosinathi.khumalo@gmail.com, 031 234 5678, 1
+Nokuthula, Zwane, nokuthula.zwane@yahoo.co.za, 041 876 5432, 7
+Joshua, van Zyl, joshua.vanzyl@outlook.com, 051 987 6543, 4
+Lindiwe, Nkosi, lindiwe.nkosi@gmail.com, 061 345 6789, 8
+Sibusiso, Vilakazi, sibusiso.vilakazi@yahoo.co.za, 071 234 5678, 2
+Themba, Zuma, themba.zuma@outlook.com, 081 876 5432, 6
+Amanda, Mbatha, amanda.mbatha@gmail.com, 091 987 6543, 3
+Alex, Botha, alex.botha@yahoo.co.za, 021 234 5678, 9
+Noluthando, Mthembu, noluthando.mthembu@gmail.com, 011 876 5432, 0
+Musa, Dube, musa.dube@yahoo.co.za, 011 876 5432, 9
+Simphiwe, Ntuli, simphiwe.ntuli@outlook.com, 012 987 6543, 1
+Nosipho, Zulu, nosipho.zulu@gmail.com, 031 234 5678, 5
+Thembi, Nkosi, thembi.nkosi@yahoo.co.za, 041 876 5432, 7
+Kyle, De Klerk, kyle.deklerk@outlook.com, 051 987 6543, 4
+Sizwe, Ngcobo, sizwe.ngcobo@gmail.com, 051 987 6543, 4
+Nomvula, Sithole, nomvula.sithole@yahoo.co.za, 061 345 6789, 8
+Sandile, Mthembu, sandile.mthembu@gmail.com, 071 234 5678, 2
+Nompumelelo, Vilakazi, nompumelelo.vilakazi@yahoo.co.za, 081 876 5432, 6
+Bheki, Khumalo, bheki.khumalo@outlook.com, 091 987 6543, 3
+Lwazi, Nkosi, lwazi.nkosi@gmail.com, 021 234 5678, 9
+Emma, van Niekerk, emma.vanniekerk@yahoo.co.za, 011 876 5432, 0
+Nolwazi, Zuma, nolwazi.zuma@gmail.com, 011 876 5432, 0
+Thulisile, Mabaso, thulisile.mabaso@outlook.com, 012 987 6543, 4
+Ndumiso, Dlamini, ndumiso.dlamini@yahoo.co.za, 031 234 5678, 1
+Ayanda, Ntuli, ayanda.ntuli@gmail.com, 041 876 5432, 6
+Gugu, Ngcobo, gugu.ngcobo@yahoo.co.za, 051 987 6543, 2
+Njabulo, Sithole, njabulo.sithole@outlook.com, 061 345 6789, 8
+Nkosinathi, Mthembu, nkosinathi.mthembu@gmail.com, 071 234 5678, 5
+Nonhlanhla, Vilakazi, nonhlanhla.vilakazi@yahoo.co.za, 081 876 5432, 3
+Bonginkosi, Khumalo, bonginkosi.khumalo@outlook.com, 091 987 6543, 7
+Liam, van der Merwe, liam.vandermerwe@gmail.com, 021 234 5678, 4
+Siphokazi, Nkosi, siphokazi.nkosi@gmail.com, 021 234 5678, 4
+Sfiso, Zuma, sfiso.zuma@yahoo.co.za, 011 876 5432, 9
+Zandile, Mabaso, zandile.mabaso@gmail.com, 012 987 6543, 2
+Siphiwe, Dlamini, siphiwe.dlamini@yahoo.co.za, 031 234 5678, 5
+Nokwazi, Ntuli, nokwazi.ntuli@outlook.com, 041 876 5432, 8
+Ayanda, Ngcobo, ayanda.ngcobo@gmail.com, 051 987 6543, 1
+Nqobile, Sithole, nqobile.sithole@yahoo.co.za, 061 345 6789, 6
+Thokozani, Mthembu, thokozani.mthembu@gmail.com, 071 234 5678, 3
+Lungiswa, Vilakazi, lungiswa.vilakazi@yahoo.co.za, 081 876 5432, 7
+Nokukhanya, Khumalo, nokukhanya.khumalo@outlook.com, 091 987 6543, 0
+Siphesihle, Nkosi, siphesihle.nkosi@gmail.com, 021 234 5678, 4
+Sbonelo, Zuma, sbonelo.zuma@yahoo.co.za, 011 876 5432, 9
+Siyabonga, Mabaso, siyabonga.mabaso@gmail.com, 012 987 6543, 2
+Phumelele, Dlamini, phumelele.dlamini@yahoo.co.za, 031 234 5678, 

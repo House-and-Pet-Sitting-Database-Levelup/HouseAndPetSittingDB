@@ -1,0 +1,15 @@
+speciesName, Exotic
+Dog, No
+Cat, No
+Budgie, No
+Hedgehog, Yes
+Fennec fox, Yes
+Guinea pig, Yes
+Lizard, Yes
+Primate, Yes
+Fish, No
+Rabbit, No
+Parrot, Yes
+Hamster, No
+Mouse, No
+Rat, No
