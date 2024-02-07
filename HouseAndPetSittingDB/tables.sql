@@ -18,17 +18,18 @@ petNumber int
 
 CREATE TABLE clientPets(
 petID uniqueidentifier DEFAULT NEWSEQUENTIALID(), 
-clientID int, 
+clientID_clientPets_fk int, 
 petName varchar(255), 
-petSpecies varchar(255), 
+petSpecies_clientPets_fk uniqueidentifier, 
 petAge int, 
 specialNotes varchar(255)
 );
 
 CREATE TABLE sittingJob(
 jobID uniqueidentifier DEFAULT NEWSEQUENTIALID(), 
-sitterID int, 
-clientID int, 
+sitterID_sittingJob_fk uniqueidentifier, 
+clientID_sittingJob_fk uniqueidentifier, 
+addressID_fk uniqueidentifier,
 startDate DATE, 
 startTime TIME, 
 endDate DATE, 
@@ -38,7 +39,7 @@ jobRate int
 
 CREATE TABLE clientAddresses(
 addressID uniqueidentifier DEFAULT NEWSEQUENTIALID(), 
-clientID int,
+clientID_clientAddresses_fk int,
 addressLine1 varchar(255), 
 addressLine2 varchar(255), 
 City varchar(255), 
