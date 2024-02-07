@@ -16,6 +16,10 @@
  - Timo Van Der Merwe
  - Jenna Dunford
 
+## Trello Board (Will update when have JIRA board)
+[Trello](https://trello.com/b/83zfvsd2/house-and-pet-sitting-level-up)
+
+
 ## Please name branches accordingly:
 
 YourName/Whatyoureworkingoninthisbranch
