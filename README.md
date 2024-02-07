@@ -10,11 +10,11 @@
  [Download here](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16) 
 
  ## Team Members:
- Lior Becker
- Thato Tladi
- Rotenda Mantsha
- Timo Van Der Merwe
- Jenna Dunford
+ - Lior Becker
+ - Thato Tladi
+ - Rotenda Mantsha
+ - Timo Van Der Merwe
+ - Jenna Dunford
 
 ## Please name branches accordingly:
 
