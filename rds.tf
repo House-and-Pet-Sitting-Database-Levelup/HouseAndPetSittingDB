@@ -8,10 +8,23 @@ provider "aws" {
 #Our main vpc in eu-west1
 #eu-west1 has 3 az's. We want to mirror our db accross all three
 resource "aws_vpc" "mainVPC" {
-  cidr_block       = "10.0.0.0/16"
+  cidr_block            = "10.0.0.0/16"
+  enable_dns_hostnames  = true
 
   tags = {
     Name = "main"
+    owner = "timo.vdmerwe@bbd.co.za"
+    created-using = "terraform"
+  }
+}
+
+/////////////////////////////////////////////////////////////////////
+#Internet Gateway for vpc
+resource "aws_internet_gateway" "gw" {
+  vpc_id = aws_vpc.mainVPC.id
+
+  tags = {
+    Name = "mainGW"
     owner = "timo.vdmerwe@bbd.co.za"
     created-using = "terraform"
   }
@@ -101,19 +114,26 @@ resource "aws_security_group" "database_security_group" {
 }
 
 /////////////////////////////////////////////////////////////////////
-#Xreate the rds instance
+#Create the rds instance
 resource "aws_db_instance" "db_instance" {
-  engine                  = 
-  engine_version          = 
-  multi_az                = 
-  identifier              = 
-  username                = 
+  engine                  = "mysql"
+  engine_version          = "8.0.35"
+  multi_az                = true
+  identifier              = "houseandpetsittinginstance"
+  username                = "Admin_BBD"
   password                = 
-  instance_class          = 
-  allocated_storage       = 
-  db_subnet_group_name    = 
-  vpc_security_group_ids  = 
-  availability_zone       = 
-  db_name                 = 
-  skip_final_snapshot     = 
+  instance_class          = "db.t2.micro"
+  allocated_storage       = 5
+  db_subnet_group_name    = aws_db_subnet_group.database_subnet_group.name
+  vpc_security_group_ids  = [aws_security_group.database_security_group.id]
+  db_name                 = "houseandpetsittingdb"
+  skip_final_snapshot     = true
+  publicly_accessible     = true
+  depends_on = [aws_internet_gateway.gw]
+
+  tags = {
+    Name = "houseandpetsittinginstance"
+    owner = "timo.vdmerwe@bbd.co.za"
+    created-using = "terraform"
+  }
 }
