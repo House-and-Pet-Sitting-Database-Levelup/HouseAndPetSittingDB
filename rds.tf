@@ -6,7 +6,6 @@ provider "aws" {
 
 /////////////////////////////////////////////////////////////////////
 #Our main vpc in eu-west1
-#eu-west1 has 3 az's. We want to mirror our db accross all three
 resource "aws_vpc" "mainVPC" {
   cidr_block            = "10.0.0.0/16"
   enable_dns_hostnames  = true
@@ -39,6 +38,8 @@ resource "aws_route" "add_to_default_route" {
 }
 
 /////////////////////////////////////////////////////////////////////
+#One subnet for the main db and a second subnet for the standby db
+
 #Our first subnet in the vpc for az eu-west-1a
 resource "aws_subnet" "subnet1" {
   vpc_id     = aws_vpc.mainVPC.id
@@ -65,24 +66,11 @@ resource "aws_subnet" "subnet2" {
   }
 }
 
-#Our third subnet in the vpc for az eu-west-1c
-resource "aws_subnet" "subnet3" {
-  vpc_id     = aws_vpc.mainVPC.id
-  cidr_block = "10.0.3.0/24"
-  availability_zone = "eu-west-1c"
-
-  tags = {
-    Name = "subnet3"
-    owner = "timo.vdmerwe@bbd.co.za"
-    created-using = "terraform"
-  }
-}
-
 /////////////////////////////////////////////////////////////////////
 #Group our subnets together so they can be assigned to our rds instance
 resource "aws_db_subnet_group" "database_subnet_group" {
   name         = "main subnet group"
-  subnet_ids   = [aws_subnet.subnet1.id, aws_subnet.subnet2.id, aws_subnet.subnet3.id]
+  subnet_ids   = [aws_subnet.subnet1.id, aws_subnet.subnet2.id]
   description  = "The main subnet group for our database"
 
   tags = {
