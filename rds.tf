@@ -19,7 +19,7 @@ resource "aws_vpc" "mainVPC" {
 }
 
 /////////////////////////////////////////////////////////////////////
-#Internet Gateway for vpc
+#Internet Gateway for vpc. Required to route traffic from our subnets to the internet
 resource "aws_internet_gateway" "gw" {
   vpc_id = aws_vpc.mainVPC.id
 
@@ -28,6 +28,14 @@ resource "aws_internet_gateway" "gw" {
     owner = "timo.vdmerwe@bbd.co.za"
     created-using = "terraform"
   }
+}
+
+/////////////////////////////////////////////////////////////////////
+#Add route to default route table. Without this traffic can't be routed back out, but it can come in
+resource "aws_route" "add_to_default_route" {
+  route_table_id         = aws_vpc.mainVPC.default_route_table_id
+  destination_cidr_block = "0.0.0.0/0" #where we want the traffic to go
+  gateway_id             = aws_internet_gateway.gw.id #where we need to send it: our gateway
 }
 
 /////////////////////////////////////////////////////////////////////
@@ -119,9 +127,9 @@ resource "aws_db_instance" "db_instance" {
   engine                  = "mysql"
   engine_version          = "8.0.35"
   multi_az                = true
-  identifier              = "houseandpetsittinginstance"
+  identifier              = "houseandpetsittinginstance" #the name of the instance
   username                = "Admin_BBD"
-  password                = 
+  password                = ""
   instance_class          = "db.t2.micro"
   allocated_storage       = 5
   db_subnet_group_name    = aws_db_subnet_group.database_subnet_group.name
@@ -129,7 +137,6 @@ resource "aws_db_instance" "db_instance" {
   db_name                 = "houseandpetsittingdb"
   skip_final_snapshot     = true
   publicly_accessible     = true
-  depends_on = [aws_internet_gateway.gw]
 
   tags = {
     Name = "houseandpetsittinginstance"
