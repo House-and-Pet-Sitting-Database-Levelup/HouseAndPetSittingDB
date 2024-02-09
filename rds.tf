@@ -1,9 +1,10 @@
-# configured aws provider with proper credentials
+/////////////////////////////////////////////////////////////////////
 provider "aws" {
   region  = "eu-west-1"
   profile = "Timo"
 }
 
+/////////////////////////////////////////////////////////////////////
 #Our main vpc in eu-west1
 #eu-west1 has 3 az's. We want to mirror our db accross all three
 resource "aws_vpc" "mainVPC" {
@@ -16,6 +17,7 @@ resource "aws_vpc" "mainVPC" {
   }
 }
 
+/////////////////////////////////////////////////////////////////////
 #Our first subnet in the vpc for az eu-west-1a
 resource "aws_subnet" "subnet1" {
   vpc_id     = aws_vpc.mainVPC.id
@@ -55,96 +57,51 @@ resource "aws_subnet" "subnet3" {
   }
 }
 
-
-/*# create default vpc if one does not exit
-resource "aws_default_vpc" "default_vpc" {
+/////////////////////////////////////////////////////////////////////
+#Group our subnets together so they can be assigned to our rds instance
+resource "aws_db_subnet_group" "database_subnet_group" {
+  name         = "main subnet group"
+  subnet_ids   = [aws_subnet.subnet1.id, aws_subnet.subnet2.id, aws_subnet.subnet3.id]
+  description  = "The main subnet group for our database"
 
   tags = {
-    Name = "default vpc"
+    Name = "database_subnet_group"
+    owner = "timo.vdmerwe@bbd.co.za"
+    created-using = "terraform"
   }
 }
 
-
-/*# use data source to get all avalablility zones in region
-data "aws_availability_zones" "available_zones" {}
-
-
-# create a default subnet in the first az if one does not exit
-resource "aws_default_subnet" "subnet_az1" {
-  availability_zone = 
-}
-
-# create a default subnet in the second az if one does not exit
-resource "aws_default_subnet" "subnet_az2" {
-  availability_zone = 
-}
-
-# create security group for the web server
-resource "aws_security_group" "webserver_security_group" {
-  name        = "webserver security group"
-  description = "enable http access on port 80"
-  vpc_id      = 
-
-  ingress {
-    description      = "http access"
-    from_port        = 
-    to_port          = 
-    protocol         = 
-    cidr_blocks      = 
-  }
-
-  egress {
-    from_port        = 
-    to_port          = 
-    protocol         = 
-    cidr_blocks      = 
-  }
-
-  tags   = {
-    Name = 
-  }
-}
-
-# create security group for the database
+/////////////////////////////////////////////////////////////////////
+#Security group for our database
 resource "aws_security_group" "database_security_group" {
   name        = "database security group"
-  description = "enable mysql/aurora access on port 3306"
-  vpc_id      = 
+  description = "enable access on port 3306"
+  vpc_id      = aws_vpc.mainVPC.id
 
   ingress {
-    description      = "mysql/aurora access"
-    from_port        = 
-    to_port          = 
-    protocol         = 
-    security_groups  = 
+    description      = "mysql access"
+    from_port        = 3306
+    to_port          = 3306
+    protocol         = "tcp"
+    cidr_blocks      = ["0.0.0.0/0"]
   }
 
   egress {
-    from_port        = 
-    to_port          = 
-    protocol         = 
-    cidr_blocks      = 
+    from_port        = 0
+    to_port          = 0
+    protocol         = -1
+    cidr_blocks      = ["0.0.0.0/0"]
   }
 
-  tags   = {
-    Name = 
-  }
-}
-
-
-# create the subnet group for the rds instance
-resource "aws_db_subnet_group" "database_subnet_group" {
-  name         = 
-  subnet_ids   = 
-  description  = 
-
-  tags   = {
-    Name = 
+  tags = {
+    Name = "database_security_group"
+    owner = "timo.vdmerwe@bbd.co.za"
+    created-using = "terraform"
   }
 }
 
-
-# create the rds instance
+/////////////////////////////////////////////////////////////////////
+#Xreate the rds instance
 resource "aws_db_instance" "db_instance" {
   engine                  = 
   engine_version          = 
@@ -159,4 +116,4 @@ resource "aws_db_instance" "db_instance" {
   availability_zone       = 
   db_name                 = 
   skip_final_snapshot     = 
-}*/
+}
