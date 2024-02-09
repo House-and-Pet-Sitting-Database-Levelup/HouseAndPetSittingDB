@@ -24,8 +24,9 @@
 
 YourName/Whatyoureworkingoninthisbranch
 
-##Confluence:
+## Confluence:
 [Confluence](https://bbd-dane.atlassian.net/wiki/spaces/~7120202a6a27770cfb4b758960e5fdd798c2cc/pages/1048622/House+and+Pet+Sitting+Database+Level+Up)
 
-##Jira:
+## Jira:
+[Jira](https://bbdcloud.atlassian.net/jira/software/projects/HPSDLU/boards/27)
 
