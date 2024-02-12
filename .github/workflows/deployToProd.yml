@@ -2,7 +2,8 @@ name: Apply Migration Scripts to Prod DB
 
 on:
   push:
-    - production
+    branches:
+      - production
 
 jobs:
   migrate-database:
