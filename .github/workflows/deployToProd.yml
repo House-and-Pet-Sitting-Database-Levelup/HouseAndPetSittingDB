@@ -1,0 +1,17 @@
+name: Apply Migration Scripts to Prod DB
+
+on:
+  push:
+    - production
+
+jobs:
+  migrate-database:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+    - uses: actions/checkout@v2
+
+    - name: Intsall Flyway
+    - run: |
+        sudo snall install flyway --classic
