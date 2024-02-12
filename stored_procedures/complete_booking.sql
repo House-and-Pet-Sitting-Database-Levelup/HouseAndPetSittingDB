@@ -1,24 +1,23 @@
-CREATE PROCEDURE CancelBooking
+CREATE PROCEDURE CompleteBooking
     @BookingID uniqueidentifier
 AS
 BEGIN
-   
+  
     BEGIN TRANSACTION;
     
     TRY
-        -- Update booking status
+       
         UPDATE Bookings
-        SET Status = 'Cancelled'
+        SET Status = 'Completed'
         WHERE BookingID = @BookingID;
 
-       
-
-    
+        
+        
         COMMIT TRANSACTION;
     CATCH
-      
+       
         ROLLBACK TRANSACTION;
-        -- Re-throw the caught exception
+        
         THROW;
 END
 GO
