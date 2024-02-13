@@ -2,8 +2,8 @@ CREATE TABLE SitterApplications(
 	PK_ApplicationID uniqueidentifier PRIMARY KEY DEFAULT NEWSEQUENTIALID(),
 	FK_BookingID uniqueidentifier NOT NULL,
 	FK_UserID uniqueidentifier NOT NULL,
-	Status varchar(8),
-	CONSTRAINT chk_Status CHECK (Status IN ('Pending','Approved', 'Rejected'))
+	applicationStatus varchar(8),
+	CONSTRAINT chk_Status CHECK (applicationStatus IN ('Pending','Approved', 'Rejected'))
 );
 
 ALTER TABLE SitterApplications
