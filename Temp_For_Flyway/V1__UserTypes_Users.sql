@@ -3,7 +3,7 @@ CREATE TABLE UserTypes (
     UserTypeDescription varchar(255) NOT NULL
 );
 
-INSERT INTO UserTypes (UserTypeID_PK, UserTypeDescription) VALUES
+INSERT INTO UserTypes (PK_UserTypeID, UserTypeDescription) VALUES
 (DEFAULT,'Sitter'),
 (DEFAULT,'Client'),
 (DEFAULT,'Admin');
