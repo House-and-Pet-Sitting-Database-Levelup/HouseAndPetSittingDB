@@ -7,7 +7,7 @@ BEGIN
     VALUES (DEFAULT, BookingID, SitterID,'Pending');
 	COMMIT;
        
-	SELECT application_id AS 'NewApplicationID';
+	SELECT PK_ApplicationID AS 'NewApplicationID';
 END;
 //
 
