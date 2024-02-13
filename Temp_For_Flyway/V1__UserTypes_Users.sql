@@ -3,7 +3,7 @@ CREATE TABLE UserTypes (
     UserTypeDescription varchar(255) NOT NULL
 );
 
-INSERT INTO UserTypes (UserTypeID, UserTypeDescription) VALUES
+INSERT INTO UserTypes (UserTypeID_PK, UserTypeDescription) VALUES
 (DEFAULT,'Sitter'),
 (DEFAULT,'Client'),
 (DEFAULT,'Admin');
@@ -15,7 +15,7 @@ CREATE TABLE Users (
     Email varchar(255) UNIQUE NOT NULL CHECK (Email LIKE '%_@__%.__%'), -- Basic email format validation
     CellNumber varchar(255) UNIQUE NOT NULL CHECK (LEN(CellNumber) = 13 AND LEFT(CellNumber, 1) = '+'),
     UserTypeID_U_FK uniqueidentifier NOT NULL,
-    FOREIGN KEY (UserTypeID_U_FK) REFERENCES UserTypes(UserTypeID)
+    FOREIGN KEY (UserTypeID_U_FK) REFERENCES UserTypes(UserTypeID_PK)
 );
 
 
