@@ -1,5 +1,5 @@
 CREATE TABLE UserTypes (
-    UserTypeID_PK uniqueidentifier DEFAULT NEWSEQUENTIALID() PRIMARY KEY,
+    PK_UserTypeID uniqueidentifier DEFAULT NEWSEQUENTIALID() PRIMARY KEY,
     UserTypeDescription varchar(255) NOT NULL
 );
 
@@ -9,13 +9,13 @@ INSERT INTO UserTypes (UserTypeID_PK, UserTypeDescription) VALUES
 (DEFAULT,'Admin');
 
 CREATE TABLE Users (
-    UserID_PK uniqueidentifier DEFAULT NEWSEQUENTIALID() PRIMARY KEY,
+    PK_UserID uniqueidentifier DEFAULT NEWSEQUENTIALID() PRIMARY KEY,
     UserName varchar(255) NOT NULL,
     Surname varchar(255) NOT NULL,
     Email varchar(255) UNIQUE NOT NULL CHECK (Email LIKE '%_@__%.__%'), -- Basic email format validation
     CellNumber varchar(255) UNIQUE NOT NULL CHECK (LEN(CellNumber) = 13 AND LEFT(CellNumber, 1) = '+'),
-    UserTypeID_U_FK uniqueidentifier NOT NULL,
-    FOREIGN KEY (UserTypeID_U_FK) REFERENCES UserTypes(UserTypeID_PK)
+    FK_UserTypeID uniqueidentifier NOT NULL,
+    FOREIGN KEY (FK_UserTypeID) REFERENCES UserTypes(PK_UserTypeID)
 );
 
 
