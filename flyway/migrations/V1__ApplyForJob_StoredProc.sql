@@ -1,6 +1,6 @@
 DELIMITER //
 
-CREATE PROCEDURE ApplyForJob(IN SitterID uniqueidentifier, IN uniqueidentifier BookingID INT)
+CREATE PROCEDURE ApplyForJob(IN SitterID uniqueidentifier, IN BookingID uniqueidentifier)
 BEGIN
    	BEGIN TRANSACTION;
     INSERT INTO SitterApplications (PK_ApplicationID, FK_BookingID, FK_SitterID, ApplicationStatus)
