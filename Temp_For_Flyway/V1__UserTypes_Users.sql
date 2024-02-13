@@ -1,5 +1,5 @@
 CREATE TABLE UserTypes (
-    UserTypeID uniqueidentifier DEFAULT NEWSEQUENTIALID() PRIMARY KEY,
+    UserTypeID_PK uniqueidentifier DEFAULT NEWSEQUENTIALID() PRIMARY KEY,
     UserTypeDescription varchar(255) NOT NULL
 );
 
@@ -9,7 +9,7 @@ INSERT INTO UserTypes (UserTypeID, UserTypeDescription) VALUES
 (DEFAULT,'Admin');
 
 CREATE TABLE Users (
-    UserID uniqueidentifier DEFAULT NEWSEQUENTIALID() PRIMARY KEY,
+    UserID_PK uniqueidentifier DEFAULT NEWSEQUENTIALID() PRIMARY KEY,
     UserName varchar(255) NOT NULL,
     Surname varchar(255) NOT NULL,
     Email varchar(255) UNIQUE NOT NULL CHECK (Email LIKE '%_@__%.__%'), -- Basic email format validation
