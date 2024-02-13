@@ -7,6 +7,6 @@ BEGIN
 
 	SET @hourly_rate = SELECT HourlyRate FROM ServiceTypes WHERE NEW.FK_ServiceTypeID = PK_ServiceTypeID;
     
-    SET @booking_cost = CalculateBookingCost(NEW.StartDateTime, NEW.EndDateTime);
+    SET @booking_cost = CalculateBookingCost(NEW.StartDateTime, NEW.EndDateTime, @hourly_rate);
   
     SET NEW.Totalcost = @booking_cost;
