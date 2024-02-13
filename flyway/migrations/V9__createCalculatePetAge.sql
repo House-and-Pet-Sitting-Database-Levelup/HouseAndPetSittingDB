@@ -9,6 +9,6 @@ BEGIN
 
 	SELECT @YOB = YearOfBirth
 	FROM Pets
-	WHERE PetID=@petID;
+	WHERE PK_petID=@petID;
 	RETURN(@CURRYEAR - @YOB);
 END;
