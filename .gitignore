@@ -906,10 +906,3 @@ flyway/flyway-10.7.2/rules/RX009__GrantAll.toml
 flyway/flyway-10.7.2/rules/RX010__CreateRole.toml
 flyway/flyway-10.7.2/rules/RX011__AlterRole.toml
 flyway/flyway-10.7.2/rules/RX012__DropPartition.toml
-flyway/flyway.conf
-flyway/flyway.conf
-flyway/flyway.conf
-*.conf
-flyway/flyway.conf
-flyway/flyway.conf.original
-flyway/flyway.toml
