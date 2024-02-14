@@ -19,6 +19,9 @@ jobs:
     - name: Navigate to flyway folder
       run: cd flyway
 
+    - name: Add secret to flyway conf
+      run: echo "\nflyway.password=12345678" >> flyway.conf
+
     - name: Run database migration
       run: flyway migrate
 
