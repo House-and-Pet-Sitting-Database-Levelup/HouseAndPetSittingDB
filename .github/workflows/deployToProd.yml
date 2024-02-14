@@ -21,4 +21,5 @@ jobs:
            && ls 
            && echo -e "\nflyway.password=12345678" >> flyway.conf
            && cat flyway.conf
+           && flyway clean
            && flyway migrate
