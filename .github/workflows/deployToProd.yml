@@ -13,14 +13,14 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Intsall Flyway
+    - name: Install Flyway
       run: sudo snap install flyway --classic
 
-    - name: Navigate to flyway folder
-      run: cd flyway && ls
-
-    - name: Add secret to flyway conf
-      run: echo "\nflyway.password=12345678" >> flyway.conf
+    - name: Apply database migrations
+      run: cd flyway 
+           && ls 
+           && echo "\nflyway.password=12345678" >> flyway.conf
+           && cat flyway.conf
 
     - name: Run database migration
       run: flyway migrate
