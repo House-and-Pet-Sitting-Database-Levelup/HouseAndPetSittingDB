@@ -1,6 +1,6 @@
 CREATE FUNCTION GetSitterApplicationByStatus
 (
-    @status VARCHAR(8)
+    @status VARCHAR(225)
 )
 
 RETURNS TABLE
