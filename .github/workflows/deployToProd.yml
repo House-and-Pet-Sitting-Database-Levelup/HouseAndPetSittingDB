@@ -19,7 +19,7 @@ jobs:
     - name: Apply database migrations
       run: cd flyway 
            && ls 
-           && echo "\nflyway.password=12345678" >> flyway.conf
+           && echo -e "\nflyway.password=12345678" >> flyway.conf
            && cat flyway.conf
 
     - name: Run database migration
