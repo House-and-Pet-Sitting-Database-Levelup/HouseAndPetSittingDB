@@ -21,8 +21,4 @@ jobs:
            && ls 
            && echo -e "\nflyway.password=12345678" >> flyway.conf
            && cat flyway.conf
-
-    - name: Run database migration
-      run: flyway migrate
-
-      
+           && flyway migrate
