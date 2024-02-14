@@ -19,4 +19,7 @@ jobs:
     - name: Navigate to flyway folder
       run: cd flyway
 
+    - name: Run database migration
+      run: flyway migrate
+
       
