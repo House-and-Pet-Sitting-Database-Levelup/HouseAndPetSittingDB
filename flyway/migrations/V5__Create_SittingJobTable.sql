@@ -2,7 +2,7 @@ CREATE TABLE Bookings (
     PK_bookingID uniqueidentifier DEFAULT NEWSEQUENTIALID() PRIMARY KEY,
     FK_sitterID uniqueidentifier NOT NULL,
     FK_clientID uniqueidentifier NOT NULL,
-    FK_serviceTypeiD uniqueidentifier,
+    FK_serviceTypeID uniqueidentifier,
     startDateTime DATETIME NOT NULL,
     endDateTime DATETIME NOT NULL,
     additionalNotes VARCHAR (MAX),
