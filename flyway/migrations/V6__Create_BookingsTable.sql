@@ -1,15 +1,15 @@
 CREATE TABLE Bookings (
-    PK_bookingID uniqueidentifier DEFAULT NEWSEQUENTIALID() PRIMARY KEY,
-    FK_sitterID uniqueidentifier NOT NULL,
-    FK_clientID uniqueidentifier NOT NULL,
-    FK_serviceTypeID uniqueidentifier,
+    PK_bookingID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    FK_sitterID int NOT NULL,
+    FK_clientID int NOT NULL,
+    FK_serviceTypeID int,
     startDateTime DATETIME NOT NULL,
     endDateTime DATETIME NOT NULL,
-    additionalNotes VARCHAR (MAX),
+    additionalNotes VARCHAR (255),
     totalCost DECIMAL (18, 2) NOT NULL,
-    status VARCHAR (255),
+    BookingStatus VARCHAR (255),
 
-    FOREIGN KEY (FK_sitterID) REFERENCES Sitters(PK_sitterID),
+    FOREIGN KEY (FK_sitterID) REFERENCES Users(PK_UserID),
     FOREIGN KEY (FK_clientID) REFERENCES Users(PK_UserID),
     FOREIGN KEY (FK_serviceTypeID) REFERENCES ServiceTypes(PK_serviceTypeID)
 )
