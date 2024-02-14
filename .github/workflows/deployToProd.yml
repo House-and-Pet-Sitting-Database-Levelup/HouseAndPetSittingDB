@@ -17,7 +17,7 @@ jobs:
       run: sudo snap install flyway --classic
 
     - name: Navigate to flyway folder
-      run: cd flyway
+      run: cd ./flyway
 
     - name: Test direc
       run: ls
