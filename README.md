@@ -3,6 +3,12 @@
 
  _"This Level-Up focuses on relational databases with a specific focus on database design using Microsoft SQL Server."_
 
+ ## NAMING CONVENTIONS
+ For Primary Keys please name the columns as PK_ColumnName
+
+
+ For Foreign Keys please name the columns as FK_ColumnName
+
  ## USING
  
  Microsoft SQL Server Management Studio v19.3.40

@@ -1,0 +1,21 @@
+DELIMITER //
+
+CREATE FUNCTION CalculatePetAge(petID int)
+RETURNS INT DETERMINISTIC
+BEGIN
+	DECLARE YOB INT;
+	DECLARE CurrYear INT;
+	DECLARE Age INT;
+
+	SET CurrYear= YEAR(NOW());
+
+	SELECT YearOfBirth INTO YOB
+	FROM Pets
+	WHERE PK_petID=petID;
+	SET Age = CurrYear - YOB;
+	RETURN Age;
+		
+END;
+//
+
+DELIMITER ;
