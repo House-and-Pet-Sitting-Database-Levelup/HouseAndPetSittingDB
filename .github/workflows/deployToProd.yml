@@ -15,3 +15,11 @@ jobs:
 
     - name: Intsall Flyway
       run: sudo snap install flyway --classic
+
+    - name: Navigate to flyway folder
+      run: cd flyway
+
+    - name: Run database migration
+      run: flyway migrate
+
+      
