@@ -76,7 +76,7 @@ SELECT CalculatePetAge(10) AS 'The age of Pet ID 10';
 
 -- Output the number of pets of some clients
 
-SELECT GetNumberOfPets(40) AS 'Number of pets for client ID 40:'
+SELECT GetNumberOfPets(40) AS 'Number of pets for client ID 40:';
 SELECT GetNumberOfPets(7) AS 'Number of pets for client ID 7:';
 
 -- Output all of the applications with an accepted status
