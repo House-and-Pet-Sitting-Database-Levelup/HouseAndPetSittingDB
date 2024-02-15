@@ -1,5 +1,11 @@
-# Pet and house sitting databases level up
+# Pet and house sitting - databases level up
  *_"This Level-Up focuses on relational databases with a specific focus on database design."_*
+
+ ## Confluence:
+ [Confluence](https://bbd-dane.atlassian.net/wiki/spaces/~7120202a6a27770cfb4b758960e5fdd798c2cc/pages/1048622/House+and+Pet+Sitting+Database+Level+Up)
+
+ ## Jira:
+ [Jira](https://bbdcloud.atlassian.net/jira/software/projects/HPSDLU/boards/27?atlOrigin=eyJpIjoiODVkN2Q4MDg2NDliNDBjOGIyMjRlNGNiMDg5OGJmNzciLCJwIjoiaiJ9)
 
  ## Setting up our database
  Terraform is required to deploy our database instances on AWS. Terraform can be downloaded [here](https://developer.hashicorp.com/terraform/install?product_intent=terraform)
@@ -9,7 +15,7 @@
  Once the RDS instances are deployed, open a terminal window in the flyway directory and execute the command: `flyway migrate`.
  This will apply all of the migrations that are in the directory **flyway/migrations** to the RDS instance that was created in the previous step. If you would like to reset the database, you can execute the command: `flyway clean`. 
 
- ## USING
+ ## Using
 
   - MYSQL 8.0
   [Download here](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
@@ -17,43 +23,18 @@
   - Terraform
   [Download here](https://developer.hashicorp.com/terraform/install?product_intent=terraform)
 
+  - Flyway
+  [Download here](https://flywaydb.org/)
 
+  - DBeaver
+  [Download here](https://dbeaver.io/download/)
 
- ## NAMING CONVENTIONS
- For Primary Keys please name the columns as PK_ColumnName
-
-
- For Foreign Keys please name the columns as FK_ColumnName
-
- ## USING
- 
- Microsoft SQL Server Management Studio v19.3.40
-
- [Download here](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16) 
-
- MYSQL 8.0
-
- [Find reference manual here](https://dev.mysql.com/doc/refman/8.0/en/)
-
- ## Team Members:
+## Team Members:
  - Lior Becker
  - Thato Tladi
  - Rotenda Mantsha
  - Timo Van Der Merwe
  - Jenna Dunford
 
-## Trello Board (Will update when have JIRA board)
+ ## Trello Board
 [Trello](https://trello.com/b/83zfvsd2/house-and-pet-sitting-level-up)
-
-
-## Please name branches accordingly:
-
-YourName/Whatyoureworkingoninthisbranch
-
-## Confluence:
-[Confluence](https://bbd-dane.atlassian.net/wiki/spaces/~7120202a6a27770cfb4b758960e5fdd798c2cc/pages/1048622/House+and+Pet+Sitting+Database+Level+Up)
-
-## Jira:
-[Jira](https://bbdcloud.atlassian.net/jira/software/projects/HPSDLU/boards/27?atlOrigin=eyJpIjoiODVkN2Q4MDg2NDliNDBjOGIyMjRlNGNiMDg5OGJmNzciLCJwIjoiaiJ9)
-
-Remove Whitespace
