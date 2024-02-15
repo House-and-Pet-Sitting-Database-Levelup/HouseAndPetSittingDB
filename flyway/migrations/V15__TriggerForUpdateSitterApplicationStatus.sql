@@ -6,7 +6,7 @@ BEGIN
     IF NEW.BookingStatus = 'Approved' THEN
         UPDATE SitterApplications 
         SET applicationStatus = 'Rejected' 
-        WHERE FK_BookingID = NEW.PK_bookingID;
+        WHERE FK_BookingID = NEW.PK_bookingID AND applicationStatus != 'Approved';
     ELSEIF NEW.BookingStatus = 'Cancelled' THEN
         DELETE FROM SitterApplications 
         WHERE FK_BookingID = NEW.PK_bookingID;
