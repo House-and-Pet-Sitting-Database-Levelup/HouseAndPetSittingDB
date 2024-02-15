@@ -14,13 +14,6 @@ VALUES
 ('Ange', 'Doe', 'coolbea@gmail.com', '+274341982319',2),
 ('Gandalf', 'Wizzo', 'samsam@outlook.com', '+278819120919',2);
 
--- Add some addresses
-
-INSERT INTO ClientAddresses (FK_clientID, addressLine1, addressLine2, city, suburb, postalCode,isPrimary) VALUES
-(3, '69 Metro Way', 'Unit 12', 'Johannesburg', 'Willowvale', 9182, 1),
-(3, '12 Fairy Road', 'Cnr Eastwood and Kale', 'Hartebeesport', 'Indigo', 1111, 0),
-(40, '1 Jungle Book Lane', 'Queen Gardens', 'Pretoria', 'Olivertown', 1721, 0);
-
 -- Add some bookings
 INSERT INTO Bookings (FK_clientID, FK_serviceTypeID, startDateTime, endDateTime, additionalNotes) VALUES
 (3, 2, '2024-09-01 09:00:00', '2024-09-03 19:00:00', 'Ensure the door is locked at night.'),
