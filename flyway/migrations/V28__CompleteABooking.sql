@@ -1,0 +1,1 @@
+CALL CompleteBooking(8);
