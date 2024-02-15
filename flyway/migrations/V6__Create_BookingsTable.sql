@@ -1,12 +1,12 @@
 CREATE TABLE Bookings (
     PK_bookingID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    FK_sitterID int NOT NULL,
+    FK_sitterID int,
     FK_clientID int NOT NULL,
-    FK_serviceTypeID int,
+    FK_serviceTypeID int NOT NULL,
     startDateTime DATETIME NOT NULL,
     endDateTime DATETIME NOT NULL,
     additionalNotes VARCHAR (255),
-    totalCost DECIMAL (18, 2) NOT NULL,
+    totalCost DECIMAL(10, 2),
     BookingStatus VARCHAR (255),
 
     FOREIGN KEY (FK_sitterID) REFERENCES Users(PK_UserID),
