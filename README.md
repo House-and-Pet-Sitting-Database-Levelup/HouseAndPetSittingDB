@@ -12,13 +12,15 @@
 
  Once Terraform is installed, open a terminal window in the terraform directory of this repository and execute the command: `terraform apply`. This will create a VPC in the eu-west-1 region, and an RDS instance in the availability zones eu-west1a and eu-west-1b. If you would like to remove the resources that were created on AWS, execute the command: `terraform destroy`.
 
+ Flyway is recommended to apply the migrations in this repository to our database. Flyway can be downloaded [here](https://flywaydb.org/)
+
  Once the RDS instances are deployed, open a terminal window in the flyway directory and execute the command: `flyway migrate`.
  This will apply all of the migrations that are in the directory **flyway/migrations** to the RDS instance that was created in the previous step. If you would like to reset the database, you can execute the command: `flyway clean`. 
 
  ## Using
 
   - MYSQL 8.0
-  [Download here](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
+  [Download here](https://dev.mysql.com/downloads/mysql/)
 
   - Terraform
   [Download here](https://developer.hashicorp.com/terraform/install?product_intent=terraform)
