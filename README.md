@@ -1,6 +1,4 @@
-# PetAndHouseSitting-DatabasesLevelUp
- Repository for database fundamentals level up
-
+# Pet and house sitting databases level up
  *_"This Level-Up focuses on relational databases with a specific focus on database design."_*
 
  ## Setting up our database
@@ -10,6 +8,15 @@
 
  Once the RDS instances are deployed, open a terminal window in the flyway directory and execute the command: `flyway migrate`.
  This will apply all of the migrations that are in the directory **flyway/migrations** to the RDS instance that was created in the previous step. If you would like to reset the database, you can execute the command: `flyway clean`. 
+
+ ## USING
+
+  - MYSQL 8.0
+  [Download here](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
+
+  - Terraform
+  [Download here](https://developer.hashicorp.com/terraform/install?product_intent=terraform)
+
 
 
  ## NAMING CONVENTIONS
