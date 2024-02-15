@@ -1,25 +1,25 @@
 -- Adding some sitters
 INSERT INTO Users (userName, surname, email, cellNumber, FK_userTypeID)
 VALUES 
-('Mikey', 'Owlo', heyyMikeey@yahoo.co.za, +278761263082, 1),
-('Sally', 'Quincey', sallyq@gmail.com, +271827321928,1),
-('Polly', 'Smith', 'coolbeans99@gmail.com, +272341982319,1),
-('Samwise', 'Dude', 'samsam@outlook.com, +278889120919,1)
+('Mikey', 'Owlo', 'heyyMikeey@yahoo.co.za', +278761263082, 1),
+('Sally', 'Quincey', 'sallyq@gmail.com', +271827321928,1),
+('Polly', 'Smith', 'coolbeans99@gmail.com', +272341982319,1),
+('Samwise', 'Dude', 'samsam@outlook.com', +278889120919,1)
  
 -- Add some clients
 INSERT INTO Users (userName, surname, email, cellNumber, FK_userTypeID)
 VALUES 
-('Mikey', 'Owlo', heyyMikeey@yahoo.co.za, +278761263082, 2),
-('Sally', 'Quincey', sallyq@gmail.com, +271827321928,2),
-('Polly', 'Smith', 'coolbeans99@gmail.com, +272341982319,2),
-('Samwise', 'Dude', 'samsam@outlook.com, +278889120919,2)
+('Mikey', 'Owlo', 'heyyMikeey@yahoo.co.za', +278761263082, 2),
+('Sally', 'Quincey', 'sallyq@gmail.com', +271827321928,2),
+('Polly', 'Smith', 'coolbeans99@gmail.com', +272341982319,2),
+('Samwise', 'Dude', 'samsam@outlook.com', +278889120919,2)
 
 -- Add some addresses
 
 INSERT INTO ClientAddresses (FK_clientID, addressLine1, addressLine2, city, suburb, postalCode,isPrimary) VALUES
-(3, 69 Metro Way, Unit 12, Johannesburg, Willowvale, 9182, 1),
-(3, 12 Fairy Road, Cnr Eastwood and Kale, Hartebeesport, Indigo, 1111, 0),
-(40, 1 Jungle Book Lane, Queen Gardens, Pretoria, Olivertown, 1721, 1)
+(3, '69 Metro Way', 'Unit 12, Johannesburg', 'Willowvale', 9182, 1),
+(3, '12 Fairy Road', 'Cnr Eastwood and Kale', 'Hartebeesport', 'Indigo', 1111, 0),
+(40, '1 Jungle Book Lane', 'Queen Gardens', 'Pretoria', 'Olivertown', 1721, 1)
 
 -- Add some bookings
 INSERT INTO Bookings (FK_clientID, FK_serviceTypeID, startDateTime, endDateTime, additionalNotes) VALUES
