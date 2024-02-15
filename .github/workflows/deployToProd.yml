@@ -21,6 +21,6 @@ jobs:
        PASSWORD1: ${{ secrets.PASSWORD }}
       run: cd flyway 
            && ls 
-           && echo -e "\nflyway.password= $PASSWORD1" >> flyway.conf
+           && echo -e "\nflyway.password= ${{ secrets.PASSWORD }}" >> flyway.conf
            && echo -e "Running migrations!\n"
            && flyway migrate
