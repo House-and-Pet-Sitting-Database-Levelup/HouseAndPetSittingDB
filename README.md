@@ -15,7 +15,7 @@
  Flyway is recommended to apply the migrations in this repository to our database. Flyway can be downloaded [here](https://flywaydb.org/)
 
  Once the RDS instances are deployed, open a terminal window in the flyway directory and execute the command: `flyway migrate`.
- This will apply all of the migrations that are in the directory **flyway/migrations** to the RDS instance that was created in the previous step. If you would like to reset the database, you can execute the command: `flyway clean`. 
+ This will apply all of the migrations that are in the directory **flyway/migrations** to the RDS instances that were created in the previous step. If you would like to reset the database, you can execute the command: `flyway clean`. 
 
  ## Using
 
