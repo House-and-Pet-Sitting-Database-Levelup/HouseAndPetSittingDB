@@ -6,7 +6,7 @@
  ## Setting up our database from this Github repository
  Terraform is required to deploy our database instances on AWS. Terraform can be downloaded [here](https://developer.hashicorp.com/terraform/install?product_intent=terraform)
 
- Once Terraform is installed, open a terminal window in the terraform directory of this repository and execute the command: Terraform apply. This will create a VPC in the eu-west-1 region, and an RDS instance in the availability zones eu-west1a and eu-west-1b. If you would like to remove the resources that were created on AWS, execute the command: Terraform destroy.
+ Once Terraform is installed, open a terminal window in the terraform directory of this repository and execute the command: **terraform apply**. This will create a VPC in the eu-west-1 region, and an RDS instance in the availability zones eu-west1a and eu-west-1b. If you would like to remove the resources that were created on AWS, execute the command: **terraform destroy**.
 
 
  ## NAMING CONVENTIONS
