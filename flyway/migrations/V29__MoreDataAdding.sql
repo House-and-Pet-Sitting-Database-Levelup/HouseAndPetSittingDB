@@ -17,7 +17,7 @@ VALUES
 -- Add some addresses
 
 INSERT INTO ClientAddresses (FK_clientID, addressLine1, addressLine2, city, suburb, postalCode,isPrimary) VALUES
-(3, '69 Metro Way', 'Unit 12, Johannesburg', 'Willowvale', 9182, 1),
+(3, '69 Metro Way', 'Unit 12', 'Johannesburg', 'Willowvale', 9182, 1),
 (3, '12 Fairy Road', 'Cnr Eastwood and Kale', 'Hartebeesport', 'Indigo', 1111, 0),
 (40, '1 Jungle Book Lane', 'Queen Gardens', 'Pretoria', 'Olivertown', 1721, 1);
 
