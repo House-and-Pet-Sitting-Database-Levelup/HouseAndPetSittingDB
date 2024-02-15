@@ -6,9 +6,9 @@ FOR EACH ROW
 BEGIN
     DECLARE primary_count INT;
 
-    IF NEW.IsPrimary = 1 THEN
+    IF NEW.isPrimary = 1 THEN
         SELECT COUNT(*) INTO primary_count
-        FROM ClientAddresses WHERE FK_clientID = NEW.FK_clientID AND IsPrimary = 1;
+        FROM ClientAddresses WHERE FK_clientID = NEW.FK_clientID AND isPrimary = 1;
 
         IF primary_count > 0 THEN
             SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Cannot have more than one primary address for a user';
@@ -22,9 +22,9 @@ FOR EACH ROW
 BEGIN
     DECLARE primary_count INT;
 
-    IF NEW.IsPrimary = 1 THEN
+    IF NEW.isPrimary = 1 THEN
         SELECT COUNT(*) INTO primary_count
-        FROM ClientAddresses WHERE FK_clientID = NEW.FK_clientID AND IsPrimary = 1;
+        FROM ClientAddresses WHERE FK_clientID = NEW.FK_clientID AND isPrimary = 1;
 
         IF primary_count > 0 THEN
             SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Cannot have more than one primary address for a user';

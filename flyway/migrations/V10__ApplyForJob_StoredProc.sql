@@ -6,7 +6,7 @@ BEGIN
 
     START TRANSACTION;
     
-    INSERT INTO SitterApplications (PK_ApplicationID, FK_BookingID, FK_UserID, ApplicationStatus)
+    INSERT INTO SitterApplications (PK_applicationID, FK_bookingID, FK_userID, applicationStatus)
     VALUES (DEFAULT, BookingID, SitterID, 'Pending');
 
     SELECT LAST_INSERT_ID() INTO NewApplicationID;

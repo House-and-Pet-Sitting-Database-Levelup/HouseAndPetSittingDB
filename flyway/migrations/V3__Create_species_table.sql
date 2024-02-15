@@ -1,4 +1,4 @@
 CREATE TABLE Species (
-    PK_SpeciesID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    SpeciesName varchar(255) NOT NULL
+    PK_speciesID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    speciesName varchar(255)
 );

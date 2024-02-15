@@ -1,4 +1,4 @@
-INSERT INTO ClientAddresses (FK_ClientID, addressLine1, addressLine2, city, suburb, postalCode,IsPrimary) VALUES
+INSERT INTO ClientAddresses (FK_clientID, addressLine1, addressLine2, city, suburb, postalCode,isPrimary) VALUES
 (27, '123 Pretorius St', 'Block A', 'Pretoria', 'Hatfield', '0028',1),
 (5, '456 Jan Smuts Ave', 'Unit 4', 'Johannesburg', 'Rosebank', '2196',1),
 (12, '789 Lenchen Ave', 'Suite 10', 'Centurion', 'Centurion Central', '0046',1),

@@ -1,4 +1,4 @@
-INSERT INTO Users (UserName, Surname, Email, CellNumber, FK_UserTypeID)
+INSERT INTO Users (userName, surname, email, cellNumber, FK_userTypeID)
 VALUES 
 ('Heisenberg', 'White', 'heisenberg.white@example.com', '+274567890143', 3),
 ('Jesse', 'Pinkman', 'jesse.pinkman@example.com', '+274567890144', 1),

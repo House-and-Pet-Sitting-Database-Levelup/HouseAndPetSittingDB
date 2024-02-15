@@ -6,7 +6,7 @@ CREATE TABLE ClientAddresses(
     city varchar(225) NOT NULL,
     suburb varchar (225) NOT NULL,
     postalCode varchar (225) NOT NULL,
-    IsPrimary bit(1) NOT NULL,
+    isPrimary bit(1) NOT NULL,
 
-    FOREIGN KEY (FK_clientID) REFERENCES Users(PK_UserID)
+    FOREIGN KEY (FK_clientID) REFERENCES Users(PK_userID)
 )

@@ -5,7 +5,7 @@ VALUES
 ('Pet Sitting',100.5),
 ('Both',120.5);
 
-INSERT INTO Species (SpeciesName)
+INSERT INTO Species (speciesName)
 VALUES
 ('Cat'),
 ('Dog'),
