@@ -3,6 +3,8 @@ DELIMITER //
 CREATE PROCEDURE ApproveSitterApplication(IN applicationID INT)    
 BEGIN 
     DECLARE bookingID int;
+    DECLARE sitterID int;
+    SELET FK_UserID INTO sitterID FROM SitterApplications WHERE PK_ApplicationID = applicationID;
     SELECT FK_BookingID INTO bookingID FROM SitterApplications WHERE PK_ApplicationID = applicationID;
     UPDATE SitterApplications
     SET applicationStatus = 'Approved'
@@ -10,6 +12,9 @@ BEGIN
         AND applicationStatus = 'Pending';
     UPDATE Bookings
     SET BookingStatus = 'Approved'
+    WHERE bookingID = PK_bookingID;
+    UPDATE Bookings
+    SET FK_sitterID = sitterID
     WHERE bookingID = PK_bookingID;
     
     IF ROW_COUNT() > 0 THEN
