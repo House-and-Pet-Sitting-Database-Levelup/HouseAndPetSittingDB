@@ -4,8 +4,10 @@ CREATE PROCEDURE ApproveSitterApplication(IN applicationID INT)
 BEGIN 
     DECLARE bookingID int;
     DECLARE sitterID int;
-    SELET FK_UserID INTO sitterID FROM SitterApplications WHERE PK_ApplicationID = applicationID;
+
+    SELECT FK_UserID INTO sitterID FROM SitterApplications WHERE PK_ApplicationID = applicationID;
     SELECT FK_BookingID INTO bookingID FROM SitterApplications WHERE PK_ApplicationID = applicationID;
+
     UPDATE SitterApplications
     SET applicationStatus = 'Approved'
     WHERE PK_ApplicationID = applicationID
