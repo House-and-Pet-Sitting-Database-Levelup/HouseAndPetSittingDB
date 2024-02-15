@@ -5,15 +5,15 @@ BEGIN
     DECLARE bookingID int;
     DECLARE sitterID int;
 
-    SELECT FK_UserID INTO sitterID FROM SitterApplications WHERE PK_ApplicationID = applicationID;
-    SELECT FK_BookingID INTO bookingID FROM SitterApplications WHERE PK_ApplicationID = applicationID;
+    SELECT FK_UserID INTO sitterID FROM SitterApplications WHERE PK_applicationID = applicationID;
+    SELECT FK_bookingID INTO bookingID FROM SitterApplications WHERE PK_applicationID = applicationID;
 
     UPDATE SitterApplications
     SET applicationStatus = 'Approved'
-    WHERE PK_ApplicationID = applicationID
+    WHERE PK_applicationID = applicationID
         AND applicationStatus = 'Pending';
     UPDATE Bookings
-    SET BookingStatus = 'Approved'
+    SET bookingStatus = 'Approved'
     WHERE bookingID = PK_bookingID;
     UPDATE Bookings
     SET FK_sitterID = sitterID

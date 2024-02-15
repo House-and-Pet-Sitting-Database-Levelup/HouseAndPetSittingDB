@@ -1,4 +1,4 @@
-INSERT INTO Pets (ClientID_U_FK, PetName, SpeciesID_U_FK, SpecialRequirements, AdditionalNotes, YearOfBirth) 
+INSERT INTO Pets (FK_clientID, petName, FK_speciesID, specialRequirements, additionalNotes, yearOfBirth) 
 VALUES 
 (3, 'Squirtle', 4, 'Needs daily walks.', 'Very calm and good with kids.', 2020),
 (7, 'Meowth', 8, 'Requires special diet.', 'Very friendly and loves attention.', 2021),

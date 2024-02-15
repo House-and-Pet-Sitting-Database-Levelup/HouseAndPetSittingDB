@@ -1,11 +1,11 @@
 CREATE TABLE Pets (
-    PetID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    ClientID_U_FK int NOT NULL,
-    PetName varchar(255) NOT NULL,
-    SpeciesID_U_FK int NOT NULL,
-    SpecialRequirements varchar(255),
-    AdditionalNotes varchar(255),
-    YearOfBirth int,
-    FOREIGN KEY (ClientID_U_FK) REFERENCES Users(PK_UserID),
-    FOREIGN KEY (SpeciesID_U_FK) REFERENCES Species(PK_SpeciesID)
+    PK_petID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    FK_clientID int NOT NULL,
+    petName varchar(255) NOT NULL,
+    FK_speciesID int NOT NULL,
+    specialRequirements varchar(255),
+    additionalNotes varchar(255),
+    yearOfBirth int,
+    FOREIGN KEY (FK_clientID) REFERENCES Users(PK_userID),
+    FOREIGN KEY (FK_speciesID) REFERENCES Species(PK_speciesID)
 );

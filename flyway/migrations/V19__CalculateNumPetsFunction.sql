@@ -5,7 +5,7 @@ RETURNS INT
 BEGIN
     DECLARE numPets INT;
 
-    SELECT COUNT(*) INTO numPets FROM Pets WHERE ClientID_U_FK = ownerID;
+    SELECT COUNT(*) INTO numPets FROM Pets WHERE FK_clientID = ownerID;
 
     RETURN numPets;
 END;
