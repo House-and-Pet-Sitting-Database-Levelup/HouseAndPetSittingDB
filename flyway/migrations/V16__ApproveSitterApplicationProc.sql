@@ -7,6 +7,9 @@ BEGIN
     SET applicationStatus = 'Approved'
     WHERE PK_ApplicationID = applicationID
         AND applicationStatus = 'Pending';
+    UPDATE Bookings
+    SET BookingStatus = 'Approved'
+    WHERE FK_BookingID = PK_bookingID;
     
     IF ROW_COUNT() > 0 THEN
        SELECT 'Sitter Application approved' AS output_message;

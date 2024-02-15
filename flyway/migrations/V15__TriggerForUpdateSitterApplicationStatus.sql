@@ -1,6 +1,6 @@
 DELIMITER //
 CREATE TRIGGER update_sitter_application_status 
-BEFORE UPDATE ON Bookings 
+AFTER UPDATE ON Bookings 
 FOR EACH ROW
 BEGIN
     IF NEW.BookingStatus = 'Approved' THEN
