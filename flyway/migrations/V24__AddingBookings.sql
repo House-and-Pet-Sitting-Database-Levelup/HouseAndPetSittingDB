@@ -5,5 +5,5 @@ INSERT INTO Bookings (FK_clientID, FK_serviceType, startDateTime, endDateTime, a
 (48, 1, '2023-10-17 08:00:00', '2023-10-23 08:00:00', 'Feed the fish at 8am and 8pm.'),
 (54, 2, '2023-10-25 12:00:00', '2023-10-30 12:00:00', 'The plants in the greenhouse need extra attention.'),
 (33, 3, '2023-11-02 15:00:00', '2023-11-08 15:00:00', 'Keep the driveway clear of leaves.'),
-30, 1, '2023-11-10 18:00:00', '2023-11-16 18:00:00', 'Please water the garden in the early morning.'),
+(30, 1, '2023-11-10 18:00:00', '2023-11-16 18:00:00', 'Please water the garden in the early morning.'),
 (59, 2, '2023-11-18 20:00:00', '2023-11-24 20:00:00', 'A neighbor will pick up the mail, just leave it on the table.');
