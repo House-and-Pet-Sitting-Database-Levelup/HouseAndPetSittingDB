@@ -87,6 +87,6 @@ CALL GetSitterApplicationByStatus('Accepted');
 CALL GetSitterApplicationByStatus('Pending');
 
 -- Output all of the applications with a rejected status
-CALL GetSitterApplicationByStatus('Rejected);
+CALL GetSitterApplicationByStatus('Rejected');
 
 
