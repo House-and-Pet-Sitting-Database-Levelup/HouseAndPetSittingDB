@@ -5,10 +5,6 @@ FOR EACH ROW
 BEGIN
     IF NEW.BookingStatus = 'Approved' THEN
         UPDATE SitterApplications 
-        SET applicationStatus = 'Approved' 
-        WHERE FK_UserID = NEW.FK_sitterID AND FK_BookingID = NEW.PK_bookingID;
- 
-        UPDATE SitterApplications 
         SET applicationStatus = 'Rejected' 
         WHERE FK_UserID != NEW.FK_sitterID AND FK_BookingID = NEW.PK_bookingID;
     ELSEIF NEW.BookingStatus = 'Cancelled' THEN
