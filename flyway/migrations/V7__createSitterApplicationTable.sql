@@ -3,7 +3,7 @@ CREATE TABLE SitterApplications(
 	FK_BookingID int NOT NULL,
 	FK_UserID int NOT NULL,
 	applicationStatus varchar(225),
-	CONSTRAINT chk_Status CHECK (applicationStatus IN ('Pending','Approved', 'Rejected'))
+	--CONSTRAINT chk_Status CHECK (applicationStatus IN ('Pending','Approved', 'Rejected'))-
 );
 
 ALTER TABLE SitterApplications
