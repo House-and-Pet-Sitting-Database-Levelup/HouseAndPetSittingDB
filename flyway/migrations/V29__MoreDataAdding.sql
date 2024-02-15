@@ -4,7 +4,7 @@ VALUES
 ('Mikey', 'Owlo', 'heyyMikeey@yahoo.co.za', '+278761263082', 1),
 ('Sally', 'Quincey', 'sallyq@gmail.com', '+271827321928',1),
 ('Polly', 'Smith', 'coolbeans99@gmail.com', '+272341982319',1),
-('Samwise', 'Dude', 'samsam@outlook.com', '+270889120919',1);
+('Samwise', 'Dude', 'samsam2222@outlook.com', '+270889120919',1);
  
 -- Add some clients
 INSERT INTO Users (userName, surname, email, cellNumber, FK_userTypeID)
