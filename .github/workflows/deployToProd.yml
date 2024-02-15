@@ -20,6 +20,5 @@ jobs:
       run: cd flyway 
            && ls 
            && echo -e "\nflyway.password=12345678" >> flyway.conf
-           && cat flyway.conf
-           && flyway clean
+           && echo -e "Running migrations!\n"
            && flyway migrate
