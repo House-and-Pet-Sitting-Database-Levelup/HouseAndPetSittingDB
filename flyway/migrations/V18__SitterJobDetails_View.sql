@@ -13,19 +13,19 @@ JOIN Bookings b ON u.UserID = b.SitterID;
 
 CREATE VIEW View_SitterCompletedSimpleJobs AS
 SELECT
-    u.UserID AS SitterID,
-    u.Name AS SitterName,
+    u.PK_UserID AS SitterID,
+    u.UserName AS SitterName,
     u.Surname AS SitterSurname,
-    b.BookingID,
+    b.PK_bookingID AS BookingID,
     b.StartDateTime,
     b.EndDateTime,
-    c.UserID AS ClientID,
-    c.Name AS ClientName,
+    c.PK_UserID AS ClientID,
+    c.UserName AS ClientName,
     c.Surname AS ClientSurname
 FROM Users u
-JOIN Bookings b ON u.UserID = b.SitterID
-JOIN Users c ON b.ClientID = c.UserID
-WHERE b.Status = 'Completed';
+JOIN Bookings b ON u.PK_UserID = b.FK_sitterID
+JOIN Users c ON b.FK_clientID = c.PK_UserID
+WHERE b.BookingStatus = 'Completed';
 
 
 -- To get all sitters with jobs that hae been completed
