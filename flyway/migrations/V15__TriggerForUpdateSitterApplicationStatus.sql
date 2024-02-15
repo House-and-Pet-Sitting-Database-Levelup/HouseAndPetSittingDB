@@ -4,21 +4,16 @@ AFTER UPDATE ON Bookings
 FOR EACH ROW
 BEGIN
     IF NEW.BookingStatus = 'Approved' THEN
-
-        UPDATE SitterApplications 
-        SET applicationStatus = 'Rejected' 
-        WHERE FK_BookingID = NEW.PK_BookingID;
-
         UPDATE SitterApplications 
         SET applicationStatus = 'Approved' 
-        WHERE FK_SitterID = NEW.FK_SitterID AND FK_BookingID = NEW.PK_BookingID;
+        WHERE FK_UserID = NEW.FK_sitterID AND FK_BookingID = NEW.PK_bookingID;
  
-
-    END IF;
- 
-    IF NEW.BookingStatus = 'Cancelled' THEN
+        UPDATE SitterApplications 
+        SET applicationStatus = 'Rejected' 
+        WHERE FK_UserID != NEW.FK_sitterID AND FK_BookingID = NEW.PK_bookingID;
+    ELSEIF NEW.BookingStatus = 'Cancelled' THEN
         DELETE FROM SitterApplications 
-        WHERE FK_BookingID = NEW.PK_BookingID;
+        WHERE FK_BookingID = NEW.PK_bookingID;
     END IF;
 END//
 DELIMITER ;
