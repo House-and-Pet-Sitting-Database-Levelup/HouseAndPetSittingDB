@@ -1,0 +1,23 @@
+INSERT INTO Pets (ClientID_U_FK, PetName, SpeciesID_U_FK, SpecialRequirements, AdditionalNotes, YearOfBirth) 
+VALUES 
+(57, 'Squirtle', 4, 'Needs daily walks.', 'Very calm and good with kids.', 2020),
+(55, 'Meowth', 8, 'Requires special diet.', 'Very friendly and loves attention.', 2021),
+(24, 'Pikachu', 6, 'Needs daily walks.', 'Has a lot of energy and needs space to run.', 2016),
+(39, 'Eevee', 5, 'Requires lots of sunlight.', 'Loves to play with toys.', 2017),
+(37, 'Eevee', 10, 'Requires lots of sunlight.', 'Can be shy around new people.', 2019),
+(55, 'Squirtle', 5, 'Needs regular grooming.', 'Very calm and good with kids.', 2017),
+(17, 'Pikachu', 4, 'Requires lots of sunlight.', 'Can be shy around new people.', 2018),
+(27, 'Psyduck', 1, 'Should not be left alone for long periods.', 'Loves to play with toys.', 2016),
+(18, 'Squirtle', 4, 'Needs regular grooming.', 'Loves to play with toys.', 2020),
+(8, 'Eevee', 7, 'Needs daily walks.', 'Has a lot of energy and needs space to run.', 2018),
+(29, 'Jigglypuff', 2, 'Should not be left alone for long periods.', 'Very friendly and loves attention.', 2021),
+(22, 'Meowth', 6, 'Requires lots of sunlight.', 'Can be shy around new people.', 2020),
+(55, 'Bulbasaur', 3, 'Requires special diet.', 'Very friendly and loves attention.', 2019),
+(45, 'Snorlax', 6, 'Requires special diet.', 'Has a lot of energy and needs space to run.', 2016),
+(56, 'Charmander', 1, 'Needs regular grooming.', 'Can be shy around new people.', 2019),
+(52, 'Eevee', 5, 'Should not be left alone for long periods.', 'Very calm and good with kids.', 2018),
+(15, 'Squirtle', 5, 'Needs regular grooming.', 'Can be shy around new people.', 2017),
+(6, 'Bulbasaur', 4, 'Requires special diet.', 'Loves to play with toys.', 2016),
+(11, 'Snorlax', 6, 'Requires lots of sunlight.', 'Loves to play with toys.', 2019),
+(30, 'Geodude', 10, 'Needs daily walks.', 'Has a lot of energy and needs space to run.', 2018),
+(24, 'Geodude', 1, 'Needs daily walks.', 'Can be shy around new people.', 2016);
