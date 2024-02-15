@@ -9,10 +9,10 @@ VALUES
 -- Add some clients
 INSERT INTO Users (userName, surname, email, cellNumber, FK_userTypeID)
 VALUES 
-('Mikey', 'Owlo', 'heyyMikeey@yahoo.co.za', '+278761263082', 2),
-('Sally', 'Quincey', 'sallyq@gmail.com', '+271827321928',2),
-('Polly', 'Smith', 'coolbeans99@gmail.com', '+272341982319',2),
-('Samwise', 'Dude', 'samsam@outlook.com', '+278889120919',2);
+('Pikey', 'Owlo', 'heyyPikeey@yahoo.co.za', '+278731263082', 2),
+('Waldo', 'wEE', 'weeeee@gmail.com', '+271827301928',2),
+('Ange', 'Doe', 'coolbea@gmail.com', '+274341982319',2),
+('Gandalf', 'Wizzo', 'samsam@outlook.com', '+278819120919',2);
 
 -- Add some addresses
 
