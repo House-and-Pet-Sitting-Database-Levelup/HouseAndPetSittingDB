@@ -1,15 +1,16 @@
-/*CREATE VIEW View_SitterSimpleJobs AS
+CREATE VIEW View_SitterJobs AS
 SELECT
-    u.UserID AS SitterID,
-    u.Name AS SitterName,
+    u.PK_UserID AS SitterID,
+    u.UserName AS SitterName,
     u.Surname AS SitterSurname,
-    b.BookingID,
-    b.StartDateTime,
-    b.EndDateTime,
-    b.TotalCost,
+    b.PK_BookingID,
+    b.BookingStatus,
+    b.startDateTime,
+    b.endDateTime,
+    b.totalCost,
 FROM Users u
 JOIN Bookings b ON u.UserID = b.SitterID;
-*/
+
 
 CREATE VIEW View_SitterCompletedSimpleJobs AS
 SELECT
