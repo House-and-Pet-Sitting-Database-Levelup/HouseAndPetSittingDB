@@ -1,3 +1,4 @@
+
 INSERT INTO ServiceTypes (description, hourlyRate)
 VALUES
 ('House Sitting',90.5),
