@@ -1,4 +1,4 @@
-INSERT INTO Bookings (FK_clientID, FK_serviceType, startDateTime, endDateTime, additionalNotes) VALUES
+INSERT INTO Bookings (FK_clientID, FK_serviceTypeID, startDateTime, endDateTime, additionalNotes) VALUES
 (15, 1, '2023-10-01 14:00:00', '2023-10-03 14:00:00', 'Please water the plants daily.'),
 (21, 2, '2023-10-05 10:00:00', '2023-10-08 10:00:00', 'Ensure the back door is locked at night.'),
 (33, 3, '2023-10-10 09:00:00', '2023-10-15 09:00:00', 'Collect mail from the mailbox.'),
