@@ -1,8 +1,8 @@
 CREATE TABLE Bookings (
     PK_bookingID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    FK_sitterID int NOT NULL,
+    FK_sitterID int,
     FK_clientID int NOT NULL,
-    FK_serviceTypeID int,
+    FK_serviceTypeID int NOT NULL,
     startDateTime DATETIME NOT NULL,
     endDateTime DATETIME NOT NULL,
     additionalNotes VARCHAR (255),
