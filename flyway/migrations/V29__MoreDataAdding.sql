@@ -71,17 +71,13 @@ CALL CompleteBooking(6);
 
 -- Output the age of some pets
 
-SELECT 'The age of Pet ID 1:' AS output_message;
-SELECT CalculatePetAge(1) AS output_message;
-SELECT 'The age of Pet ID 1:' AS output_message;
-SELECT CalculatePetAge(10) AS output_message;
+SELECT CalculatePetAge(1) AS 'The age of Pet ID 1';
+SELECT CalculatePetAge(10) AS 'The age of Pet ID 10';
 
 -- Output the number of pets of some clients
 
-SELECT 'Number of pets for client ID 40:' AS output_message;
-SELECT GetNumberPets(40) AS output_message;
-SELECT 'Number of pets for client ID 7:' AS output_message;
-SELECT GetNumberPets(7) AS output_message;
+SELECT GetNumberOfPets(40) AS 'Number of pets for client ID 40:'
+SELECT GetNumberOfPets(7) AS 'Number of pets for client ID 7:';
 
 -- Output all of the applications with an accepted status
 
