@@ -15,6 +15,10 @@
 
  [Download here](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16) 
 
+ MYSQL 8.0
+
+ [Find reference manual here](https://dev.mysql.com/doc/refman/8.0/en/)
+
  ## Team Members:
  - Lior Becker
  - Thato Tladi
