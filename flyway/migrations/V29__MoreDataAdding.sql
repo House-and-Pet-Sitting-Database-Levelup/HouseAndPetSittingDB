@@ -75,11 +75,6 @@ CALL CompleteBooking(2);
 CALL CompleteBooking(7);
 CALL CompleteBooking(6);
 
--- Try to add a user with more than 1 primary address
-
-
-INSERT INTO ClientAddresses (FK_clientID, addressLine1, addressLine2, city, suburb, postalCode,isPrimary) VALUES
-(40, 11 Detective Avenue, Kingly Way, Pretoria, Olivertown, 1721, 1);
 
 -- Output the age of some pets
 
