@@ -9,7 +9,7 @@ SELECT
     b.endDateTime,
     b.totalCost,
 FROM Users u
-JOIN Bookings b ON u.UserID = b.SitterID;
+JOIN Bookings b ON u.PK_UserID = b.FK_SitterID;
 
 
 CREATE VIEW View_SitterCompletedSimpleJobs AS
