@@ -19,6 +19,6 @@ jobs:
     - name: Apply database migrations
       run: cd flyway 
            && ls 
-           && echo -e "\nflyway.password={{ secrets.PASSWORD }}" >> flyway.conf
+           && echo -e "\nflyway.password={{ secrets.PASSWORD}}" >> flyway.conf
            && echo -e "Running migrations!\n"
            && flyway migrate
