@@ -58,4 +58,4 @@ VALUES
 ('Kenny', 'G', 'kenny.g@example.com', '+274567890198', 3),
 ('Kevin', 'C', 'kevin.c@example.com', '+274567890199', 1),
 ('Tortuga', 'Yellow', 'tortuga2@example.com', '+274567890200', 2),
-('Steven', 'Gomez', 'steven.gomez2@example.com', '+274567890201);
+('Steven', 'Gomez', 'steven.gomez2@example.com', '+274567890201',1);
