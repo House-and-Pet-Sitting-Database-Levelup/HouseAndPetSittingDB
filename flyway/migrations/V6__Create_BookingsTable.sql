@@ -6,7 +6,7 @@ CREATE TABLE Bookings (
     startDateTime DATETIME NOT NULL,
     endDateTime DATETIME NOT NULL,
     additionalNotes VARCHAR (255),
-    totalCost DECIMAL (18, 2) NOT NULL,
+    totalCost DECIMAL(10, 2),
     BookingStatus VARCHAR (255),
 
     FOREIGN KEY (FK_sitterID) REFERENCES Users(PK_UserID),
