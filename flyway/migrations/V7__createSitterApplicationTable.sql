@@ -2,7 +2,9 @@ CREATE TABLE SitterApplications(
 	PK_applicationID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	FK_bookingID int NOT NULL,
 	FK_userID int NOT NULL,
-	applicationStatus varchar(225)
+	FK_applicationStatus int DEFAULT 3,
+
+	FOREIGN KEY (FK_applicationStatus REFERENCES StatusTypes(PK_statusType)
 );
 
 ALTER TABLE SitterApplications

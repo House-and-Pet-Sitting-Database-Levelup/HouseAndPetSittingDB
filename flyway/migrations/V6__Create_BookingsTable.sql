@@ -7,9 +7,10 @@ CREATE TABLE Bookings (
     endDateTime DATETIME NOT NULL,
     additionalNotes VARCHAR (255),
     totalCost DECIMAL(10, 2),
-    bookingStatus VARCHAR (255) DEFAULT 'Pending',
+    FK_bookingStatus int DEFAULT 3,
 
     FOREIGN KEY (FK_sitterID) REFERENCES Users(PK_userID),
     FOREIGN KEY (FK_clientID) REFERENCES Users(PK_userID),
-    FOREIGN KEY (FK_serviceTypeID) REFERENCES ServiceTypes(PK_serviceTypeID)
+    FOREIGN KEY (FK_serviceTypeID) REFERENCES ServiceTypes(PK_serviceTypeID),
+    FOREIGN KEY (FK_bookingStatus REFERENCES StatusTypes(PK_statusType)
 )

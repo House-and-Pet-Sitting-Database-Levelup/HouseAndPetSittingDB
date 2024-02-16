@@ -1,10 +1,10 @@
 DELIMITER //
 
 CREATE PROCEDURE GetSitterApplicationByStatus(
-    IN applicantStatus VARCHAR(225)
+    IN applicantStatus int
 )
 BEGIN
-    SELECT * FROM SitterApplications WHERE applicationStatus = applicantStatus;
+    SELECT * FROM SitterApplications WHERE FK_applicationStatus = applicantStatus;
 END//
 
 DELIMITER ;

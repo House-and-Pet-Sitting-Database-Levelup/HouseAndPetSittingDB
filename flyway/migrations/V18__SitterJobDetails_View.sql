@@ -12,10 +12,5 @@ SELECT
 FROM Users u
 JOIN Bookings b ON u.PK_userID = b.FK_sitterID
 JOIN Users c ON b.FK_clientID = c.PK_userID
-WHERE b.bookingStatus = 'Completed';
+WHERE b.FK_bookingStatus = 4;
 
-
--- To get all sitters with jobs that hae been completed
--- SELECT * FROM View_SitterJobs;
--- To get all completed jobs for a specific sitter
--- SELECT * FROM View_SitterJobs WHERE SitterID = 'SitterID';
