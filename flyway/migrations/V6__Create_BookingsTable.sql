@@ -12,5 +12,5 @@ CREATE TABLE Bookings (
     FOREIGN KEY (FK_sitterID) REFERENCES Users(PK_userID),
     FOREIGN KEY (FK_clientID) REFERENCES Users(PK_userID),
     FOREIGN KEY (FK_serviceTypeID) REFERENCES ServiceTypes(PK_serviceTypeID),
-    FOREIGN KEY (FK_bookingStatus REFERENCES StatusTypes(PK_statusType)
+    FOREIGN KEY (FK_bookingStatus) REFERENCES StatusTypes(PK_statusType)
 )

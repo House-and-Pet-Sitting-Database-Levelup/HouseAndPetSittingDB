@@ -4,7 +4,7 @@ CREATE TABLE SitterApplications(
 	FK_userID int NOT NULL,
 	FK_applicationStatus int DEFAULT 3,
 
-	FOREIGN KEY (FK_applicationStatus REFERENCES StatusTypes(PK_statusType)
+	FOREIGN KEY (FK_applicationStatus) REFERENCES StatusTypes(PK_statusType)
 );
 
 ALTER TABLE SitterApplications
