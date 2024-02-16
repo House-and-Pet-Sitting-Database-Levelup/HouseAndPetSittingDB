@@ -81,12 +81,12 @@ SELECT GetNumberOfPets(7) AS 'Number of pets for client ID 7:';
 
 -- Output all of the applications with an accepted status
 
-CALL GetSitterApplicationByStatus('Approved');
+CALL GetSitterApplicationByStatus(1);
 
 -- Output all of the applications with a pending status
-CALL GetSitterApplicationByStatus('Pending');
+CALL GetSitterApplicationByStatus(3);
 
 -- Output all of the applications with a rejected status
-CALL GetSitterApplicationByStatus('Rejected');
+CALL GetSitterApplicationByStatus(2);
 
 

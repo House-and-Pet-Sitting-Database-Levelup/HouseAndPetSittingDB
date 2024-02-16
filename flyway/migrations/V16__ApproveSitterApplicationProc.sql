@@ -9,11 +9,11 @@ BEGIN
     SELECT FK_bookingID INTO bookingID FROM SitterApplications WHERE PK_applicationID = applicationID;
 
     UPDATE SitterApplications
-    SET applicationStatus = 'Approved'
+    SET FK_applicationStatus = 1
     WHERE PK_applicationID = applicationID
-        AND applicationStatus = 'Pending';
+        AND FK_applicationStatus = 3;
     UPDATE Bookings
-    SET bookingStatus = 'Approved'
+    SET FK_bookingStatus = 1
     WHERE bookingID = PK_bookingID;
     UPDATE Bookings
     SET FK_sitterID = sitterID

@@ -5,7 +5,7 @@ BEGIN
     DECLARE rowsAffected INT;
 
     START TRANSACTION;
-        UPDATE Bookings SET bookingStatus = 'Completed' WHERE PK_bookingID = BookingID;
+        UPDATE Bookings SET FK_bookingStatus = 4 WHERE PK_bookingID = BookingID;
         SELECT ROW_COUNT() INTO rowsAffected;
     COMMIT;
 
